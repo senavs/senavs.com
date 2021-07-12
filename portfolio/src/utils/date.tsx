@@ -15,10 +15,10 @@ export function getExperience(): Array<number> {
 
   const yearsOfExperience = Math.floor((today.getTime() - experienceStartDate.getTime()) / (1000 * 60 * 60 * 24 * 365.25))
   
-  const diference = (today.getMonth() + 1) - (today.getMonth() + 1)
+  const diference = (today.getMonth() + 1) - (experienceStartDate.getMonth() + 1)
   let monthsOfExperience
   if (diference < 0) {
-    monthsOfExperience = diference * -1 + (today.getMonth() + 1)
+    monthsOfExperience = 12 + diference
   } else {
     monthsOfExperience = diference
   }
