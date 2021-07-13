@@ -9,7 +9,7 @@ interface NavBarProps {
 
 export default function NavBar({ aboutId, resumeId, experienceId, educationId, certificationsId, contactMe }: NavBarProps) {
   return (
-    <ul className="nav nav-pills my-3 d-flex justify-content-evenly" role="tablist">
+    <ul className="nav nav-pills my-3  justify-content-evenly" role="tablist">
 
       <li className="nav-item" role="presentation">
         <button className="nav-link active" data-bs-toggle="tab" data-bs-target={`#${aboutId}`} type="button" role="tab" aria-selected="true">

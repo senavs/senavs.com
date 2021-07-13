@@ -1,8 +1,7 @@
-import { getAge, getExperience } from "../utils/date"
+import { getAge, getExperienceAsString } from "../utils/date"
 
 
 export default function PersonalInfo() {
-  const [yearsOfExperience, monthsOfExperience] = getExperience()
 
   return (
     <div className="card">
@@ -19,13 +18,10 @@ export default function PersonalInfo() {
 
       <ul className="list-group list-group-flush">
         <li className="list-group-item">
-          <strong>Age:</strong> <span>{getAge()} years old</span>
+          <strong>Age:</strong> <span>{getAge()}</span>
         </li>
         <li className="list-group-item">
-          <strong>Location:</strong> <span>Brasília, Brazil</span>
-        </li>
-        <li className="list-group-item">
-          <strong>Experience:</strong> <span>{yearsOfExperience} year{yearsOfExperience > 0 ? "s" : ""} and {monthsOfExperience} month{monthsOfExperience > 0 ? "s" : ""}</span>
+          <strong>Experience:</strong> <span>{getExperienceAsString()}</span>
         </li>
         <li className="list-group-item">
           <strong>Degree:</strong> <span>Higher education</span>

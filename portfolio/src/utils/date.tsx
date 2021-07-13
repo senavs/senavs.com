@@ -25,3 +25,9 @@ export function getExperience(): Array<number> {
 
   return [yearsOfExperience, monthsOfExperience]
 }
+
+export function getExperienceAsString(): string {
+  const [yearsOfExperience, monthsOfExperience] = getExperience()
+
+  return `${yearsOfExperience} year${yearsOfExperience > 1 ? "s" : ""} and ${monthsOfExperience} month${monthsOfExperience > 1 ? "s" : ""}`
+}
