@@ -1,4 +1,4 @@
-import { getAge, getExperienceAsString } from "../utils/date"
+import { getAge, getExperienceAsString } from "../../utils/date"
 
 
 export default function AboutSection() {
@@ -50,11 +50,11 @@ export default function AboutSection() {
       {/* little bit */}
       <div className="accordion-item">
         <h2 className="accordion-header">
-          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#machine-learning-section" aria-expanded="true">
+          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#little-bit-section" aria-expanded="true">
             A little about myself
           </button>
         </h2>
-        <div id="machine-learning-section" className="accordion-collapse collapse show">
+        <div id="little-bit-section" className="accordion-collapse collapse show">
           <div className="accordion-body">
             Hi!! I'm Matheus Sena, a <strong>Machine Learning</strong> and <strong>Backend Software Engineer</strong> who loves 
             develop services that helps people to decrease time and costs in a personal and professional environments. 

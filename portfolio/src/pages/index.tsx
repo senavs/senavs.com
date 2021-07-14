@@ -1,13 +1,16 @@
-import AboutSection from "../components/AboutSection";
-import NavBar from "../components/NavBar";
-import PersonalInfo from "../components/PersonalInfo";
+import AboutSection from "../components/about/AboutSection";
+import ExperienceSection from "../components/experience/ExperienceSection";
+import NavBar from "../components/navbar/NavBar";
+import PersonalInfo from "../components/about/PersonalInfo";
+import ResumeSection from "../components/resume/ResumeSection";
+
 
 export default function Index() {
   return (
     <div className="container pb-3">
 
-      {/* nav bar 1/2 */}
-      <nav className="d-none d-md-inline">
+      {/* navbar */}
+      <nav className="sticky-top">
         <NavBar
           aboutId="about"
           resumeId="resume"
@@ -26,22 +29,12 @@ export default function Index() {
           <PersonalInfo />
         </div>
 
-        {/* nav bar 2/2 */}
-        <nav className="d-sm-none">
-          <NavBar
-            aboutId="about"
-            resumeId="resume"
-            experienceId="experience"
-            educationId="education"
-            certificationsId="certification"
-            contactMe="contact"
-          />
-        </nav>
-
         {/* sections */}
-        <section className="col-md-8 col-12">
+        <section className="col-md-8 col-12 mt-3 mt-md-3">
           <div className="tab-content">
             <div className="tab-pane fade show active" id="about" role="tabpanel"><AboutSection /></div>
+            <div className="tab-pane fade show" id="resume" role="tabpanel"><ResumeSection /></div>
+            <div className="tab-pane fade show" id="experience" role="tabpanel"><ExperienceSection /></div>
           </div>
         </section>
 

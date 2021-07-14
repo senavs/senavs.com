@@ -1,4 +1,4 @@
-import { getAge, getExperienceAsString } from "../utils/date"
+import { getAge, getExperienceAsString } from "../../utils/date"
 
 
 export default function PersonalInfo() {
