@@ -3,6 +3,7 @@ import ExperienceSection from "../components/experience/ExperienceSection";
 import NavBar from "../components/navbar/NavBar";
 import PersonalInfo from "../components/about/PersonalInfo";
 import ResumeSection from "../components/resume/ResumeSection";
+import EducationSection from "../components/education/EducationSession";
 
 
 export default function Index() {
@@ -35,6 +36,7 @@ export default function Index() {
             <div className="tab-pane fade show active" id="about" role="tabpanel"><AboutSection /></div>
             <div className="tab-pane fade show" id="resume" role="tabpanel"><ResumeSection /></div>
             <div className="tab-pane fade show" id="experience" role="tabpanel"><ExperienceSection /></div>
+            <div className="tab-pane fade show" id="education" role="tabpanel"><EducationSection /></div>
           </div>
         </section>
 
