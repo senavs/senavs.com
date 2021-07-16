@@ -3,11 +3,11 @@ interface NavBarProps {
   resumeId: string,
   experienceId: string,
   educationId: string,
-  certificationsId: string
+  achievementsId: string
   contactMe: string
 }
 
-export default function NavBar({ aboutId, resumeId, experienceId, educationId, certificationsId, contactMe }: NavBarProps) {
+export default function NavBar({ aboutId, resumeId, experienceId, educationId, achievementsId, contactMe }: NavBarProps) {
   return (
     <ul className="nav nav-pills my-3 py-2 justify-content-evenly bg-white" role="tablist">
 
@@ -36,8 +36,8 @@ export default function NavBar({ aboutId, resumeId, experienceId, educationId, c
       </li>
 
       <li className="nav-item" role="presentation">
-        <button className="nav-link" data-bs-toggle="tab" data-bs-target={`#${certificationsId}`} type="button" role="tab" aria-selected="false">
-          <i className="bi bi-award-fill me-2"></i><span>Certification</span>
+        <button className="nav-link" data-bs-toggle="tab" data-bs-target={`#${achievementsId}`} type="button" role="tab" aria-selected="false">
+          <i className="bi bi-award-fill me-2"></i><span>Achievements</span>
         </button>
       </li>
 
