@@ -9,7 +9,7 @@ export default function PersonalInfo() {
       <img className="card-img-top" src="https://avatars.githubusercontent.com/u/49353949" alt="profile picture" />
 
       <div className="card-body">
-        <h5 className="card-title">Matheus Sena</h5>
+        <h3 className="card-title">Matheus Sena</h3>
         <p className="card-text">
           Student of Information System.
           In love with programing languages, especially Python for data analysis, IA and WEB Scraping.

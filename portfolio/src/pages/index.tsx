@@ -31,7 +31,7 @@ export default function Index() {
         </div>
 
         {/* sections */}
-        <section className="col-md-8 col-12 mt-3 mt-md-3">
+        <section className="col-md-8 col-12 mt-3 mt-md-0">
           <div className="tab-content">
             <div className="tab-pane fade show active" id="about" role="tabpanel"><AboutSection /></div>
             <div className="tab-pane fade show" id="resume" role="tabpanel"><ResumeSection /></div>
