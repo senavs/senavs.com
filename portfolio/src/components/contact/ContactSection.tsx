@@ -80,6 +80,10 @@ export default function ContactSection() {
                   <img src="plataforms/medium.png" alt="medium profile link" width="50%" />
                 </a>
 
+                <a href="https://hub.docker.com/u/senavs" target="_blank" >
+                  <img src="plataforms/docker-hub.png" alt="docker-hub profile link" width="50%" />
+                </a>
+
               </div>
             </div>
           </div>
