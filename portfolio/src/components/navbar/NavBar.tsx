@@ -1,3 +1,6 @@
+import styles from "../../styles/NavBar.module.css"
+
+
 interface NavBarProps {
   aboutId: string,
   resumeId: string,
@@ -9,7 +12,7 @@ interface NavBarProps {
 
 export default function NavBar({ aboutId, resumeId, experienceId, educationId, achievementsId, contactMe }: NavBarProps) {
   return (
-    <ul className="nav nav-pills py-2 justify-content-evenly bg-white" role="tablist">
+    <ul className={`${styles.horizontalNavbar} nav nav-pills nav-fill flex-nowrap py-3 no-wrap bg-white`} role="tablist">
 
       <li className="nav-item" role="presentation">
         <button className="nav-link active" data-bs-toggle="tab" data-bs-target={`#${aboutId}`} type="button" role="tab" aria-selected="true">
