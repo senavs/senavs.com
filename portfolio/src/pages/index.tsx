@@ -8,41 +8,62 @@ import AchievementsSection from "../components/achievements/AchievementsSection"
 
 
 export default function Index() {
-  return (
-    <div className="container pb-3">
 
+  // Client-side-only code
+  if (process.browser) {
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+
+      let css: {}
+      if (window.pageYOffset > 0) {
+        css = { boxShadow: '1px 1px 15px #888888' }
+      } else {
+        css = { boxShadow: '0px 0px 0px #888888' }
+      }
+
+      Object.assign(nav.style, css);
+    })
+  }
+
+  return (
+    <>
       {/* navbar */}
       <nav className="sticky-top">
-        <NavBar
-          aboutId="about"
-          resumeId="resume"
-          experienceId="experience"
-          educationId="education"
-          achievementsId="achievements"
-          contactMe="contact"
-        />
+        <div className="container">
+          <NavBar
+            aboutId="about"
+            resumeId="resume"
+            experienceId="experience"
+            educationId="education"
+            achievementsId="achievements"
+            contactMe="contact"
+          />
+        </div>
       </nav>
 
-      {/* content */}
-      <main className="row">
+      <div className="container pb-3">
 
-        {/* personal information */}
-        <div className="col-md-4 col-12 mt-3 mt-md-0">
-          <PersonalInfo />
-        </div>
+        {/* content */}
+        <main className="row">
 
-        {/* sections */}
-        <section className="col-md-8 col-12 mt-3 mt-md-0">
-          <div className="tab-content">
-            <div className="tab-pane fade show active" id="about" role="tabpanel"><AboutSection /></div>
-            <div className="tab-pane fade show" id="resume" role="tabpanel"><ResumeSection /></div>
-            <div className="tab-pane fade show" id="experience" role="tabpanel"><ExperienceSection /></div>
-            <div className="tab-pane fade show" id="education" role="tabpanel"><EducationSection /></div>
-            <div className="tab-pane fade show" id="achievements" role="tabpanel"><AchievementsSection /></div>
+          {/* personal information */}
+          <div className="col-md-4 col-12 mt-3 mt-md-0">
+            <PersonalInfo />
           </div>
-        </section>
 
-      </main>
-    </div>
+          {/* sections */}
+          <section className="col-md-8 col-12 mt-3 mt-md-0">
+            <div className="tab-content">
+              <div className="tab-pane fade show active" id="about" role="tabpanel"><AboutSection /></div>
+              <div className="tab-pane fade show" id="resume" role="tabpanel"><ResumeSection /></div>
+              <div className="tab-pane fade show" id="experience" role="tabpanel"><ExperienceSection /></div>
+              <div className="tab-pane fade show" id="education" role="tabpanel"><EducationSection /></div>
+              <div className="tab-pane fade show" id="achievements" role="tabpanel"><AchievementsSection /></div>
+            </div>
+          </section>
+
+        </main>
+      </div>
+    </>
   )
 }
