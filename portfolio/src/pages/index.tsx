@@ -33,7 +33,7 @@ export default function Index() {
         <div className="container p-0 p-md-2">
           <NavBar
             aboutId="about"
-            resumeId="resume"
+            // resumeId="resume"
             experienceId="experience"
             educationId="education"
             achievementsId="achievements"
