@@ -19,8 +19,27 @@ export default function ExperienceSection() {
               title="Senior Software Analyst"
               startDate="May, 2021"
               endDate="Present"
-              subtitle="foo"
+              subtitle="Software development so that we can decrease the number of people in debts in Brazil"
             >
+              <ul className="text-justify">
+                <li>
+                  <strong>Allocated at: </strong>
+                  <span>Serasa Limpa Nome (LNO).</span>
+                </li>
+                <li>
+                  <strong>Activities: </strong>
+                  <span>
+                    Backend software development and software analysis; Monitoring.
+                  </span>
+                </li>
+                <li>
+                  <strong>Tools: </strong>
+                  <span>
+                    Python3; Go Lang; Flask; FastAPI; Docker, Docker Container,
+                    Jenkis, Kubernetes; AWS; Redis; Splunk; Dynatrace and Grafana.
+                  </span>
+                </li>
+              </ul>
             </ExperienceSectionContent>
           </div>
         </div>
