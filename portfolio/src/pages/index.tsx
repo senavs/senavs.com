@@ -5,6 +5,7 @@ import PersonalInfo from "../components/about/PersonalInfo";
 import ResumeSection from "../components/resume/ResumeSection";
 import EducationSection from "../components/education/EducationSession";
 import AchievementsSection from "../components/achievements/AchievementsSection";
+import ContactSection from "../components/contact/ContactSection";
 
 
 export default function Index() {
@@ -59,6 +60,7 @@ export default function Index() {
               <div className="tab-pane fade show" id="experience" role="tabpanel"><ExperienceSection /></div>
               <div className="tab-pane fade show" id="education" role="tabpanel"><EducationSection /></div>
               <div className="tab-pane fade show" id="achievements" role="tabpanel"><AchievementsSection /></div>
+              <div className="tab-pane fade show" id="contact" role="tabpanel"><ContactSection /></div>
             </div>
           </section>
 
