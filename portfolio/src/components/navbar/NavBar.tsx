@@ -46,7 +46,7 @@ export default function NavBar({ aboutId, resumeId, experienceId, educationId, a
 
       <li className="nav-item ms-1 me-2" role="presentation">
         <button className="nav-link" data-bs-toggle="tab" data-bs-target={`#${contactMe}`} type="button" role="tab" aria-selected="false">
-          <i className="bi bi-telephone-fill me-2"></i><span>Contact Me</span>
+          <i className="bi bi-telephone-fill me-2"></i><span>Contact me</span>
         </button>
       </li>
 
