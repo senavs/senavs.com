@@ -56,31 +56,31 @@ export default function ContactSection() {
 
               <div className="col-12 d-flex justify-content-evenly">
 
-                <a href="https://www.linkedin.com/in/senavs" target="_blank" >
+                <a className="d-flex justify-content-center" href="https://www.linkedin.com/in/senavs" target="_blank" >
                   <img src="plataforms/linkedin.png" alt="linkedin profile link" width="50%" />
                 </a>
 
-                <a href="https://github.com/senavs" target="_blank" >
+                <a className="d-flex justify-content-center" href="https://github.com/senavs" target="_blank" >
                   <img src="plataforms/github.png" alt="github repository link" width="50%" />
                 </a>
 
-                <a href="https://gitlab.com/senavs" target="_blank" >
+                <a className="d-flex justify-content-center" href="https://gitlab.com/senavs" target="_blank" >
                   <img src="plataforms/gitlab.png" alt="gitlab repository link" width="50%" />
                 </a>
 
-                <a href="https://pypi.org/user/senavs" target="_blank" >
+                <a className="d-flex justify-content-center" href="https://pypi.org/user/senavs" target="_blank" >
                   <img src="plataforms/pypi.png" alt="pypi repository link" width="50%" />
                 </a>
 
-                <a href="https://stackoverflow.com/users/12996853/senavs" target="_blank" >
+                <a className="d-flex justify-content-center" href="https://stackoverflow.com/users/12996853/senavs" target="_blank" >
                   <img src="plataforms/stack-overflow.png" alt="stack overflow profile link" width="50%" />
                 </a>
 
-                <a href="https://medium.com/@senavs" target="_blank" >
+                <a className="d-flex justify-content-center" href="https://medium.com/@senavs" target="_blank" >
                   <img src="plataforms/medium.png" alt="medium profile link" width="50%" />
                 </a>
 
-                <a href="https://hub.docker.com/u/senavs" target="_blank" >
+                <a className="d-flex justify-content-center" href="https://hub.docker.com/u/senavs" target="_blank" >
                   <img src="plataforms/docker-hub.png" alt="docker-hub profile link" width="50%" />
                 </a>
 
