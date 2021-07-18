@@ -30,7 +30,7 @@ export default function Index() {
     <>
       {/* navbar */}
       <nav className="sticky-top">
-        <div className="container p-0 p-md-2">
+        <div className="container p-0">
           <NavBar
             aboutId="about"
             // resumeId="resume"
