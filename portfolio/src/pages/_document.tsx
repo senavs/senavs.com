@@ -19,6 +19,9 @@ export default class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet" />
           <title>Portfolio | Matheus Sena Vasconcelos</title>
+
+          {/* google ad */}
+          <script data-ad-client="ca-pub-3235603883984684" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         </Head>
 
         <body>
