@@ -29,9 +29,9 @@ export default function PersonalInfo() {
       </ul>
 
       <div className="card-body d-flex justify-content-center">
-        <a className="card-link text-dark" href="https://github.com/senavs"><i className="bi bi-github"></i></a>
-        <a className="card-link text-dark" href="https://www.linkedin.com/in/senavs"><i className="bi bi-linkedin"></i></a>
-        <a className="card-link text-dark" href="mailto:sena.matheus14@gmail.com"><i className="bi bi-envelope-fill"></i></a>
+        <a className="card-link text-dark" target="_blank" href="https://github.com/senavs"><i className="bi bi-github"></i></a>
+        <a className="card-link text-dark" target="_blank" href="https://www.linkedin.com/in/senavs"><i className="bi bi-linkedin"></i></a>
+        <a className="card-link text-dark" target="_blank" href="mailto:sena.matheus14@gmail.com"><i className="bi bi-envelope-fill"></i></a>
       </div>
 
     </div>

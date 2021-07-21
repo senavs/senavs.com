@@ -84,6 +84,10 @@ export default function ContactSection() {
                   <img src="plataforms/docker-hub.png" alt="docker-hub profile link" width="50%" />
                 </a>
 
+                <a className="d-flex justify-content-center" href="https://www.upwork.com/freelancers/~01d74fed461f6d9c25" target="_blank" >
+                  <img src="plataforms/upwork.png" alt="upwork profile link" width="50%" />
+                </a>
+
               </div>
             </div>
           </div>
