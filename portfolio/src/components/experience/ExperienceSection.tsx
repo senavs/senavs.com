@@ -35,8 +35,8 @@ export default function ExperienceSection() {
                 <li>
                   <strong>Tools: </strong>
                   <span>
-                    Python3; Go Lang; Flask; FastAPI; Docker, Docker Container,
-                    Jenkis, Kubernetes; AWS; Redis; Splunk; Dynatrace and Grafana.
+                  Tools: Python3; Go Lang; Flask; FastAPI; Docker, Docker Container, Jenkis, Kubernetes; 
+                  Elastic Stack; Elastic APM; AWS; Redis; Splunk; Dynatrace and Grafana.
                   </span>
                 </li>
               </ul>
