@@ -4,7 +4,7 @@ import ExperienceSectionContent from "../experience/ExperienceSectionContent";
 export default function EducationSection() {
 
   return (
-    <div className="accordion">
+    <div className="accordion" id="education-session">
 
       {/* upis */}
       <div className="accordion-item">
@@ -13,15 +13,14 @@ export default function EducationSection() {
             UPIS
           </button>
         </h2>
-        <div id="upis-section" className="accordion-collapse collapse show" >
+        <div id="upis-section" className="accordion-collapse collapse show" data-bs-parent="#education-session" >
           <div className="accordion-body">
             <ExperienceSectionContent
               imagePath="brands/upis.png"
               title="Bachelor's degree of Information System"
               startDate="Jan, 2018"
               endDate="Present"
-              subtitle=""
-            >
+              subtitle="">
             </ExperienceSectionContent>
           </div>
         </div>
@@ -30,11 +29,11 @@ export default function EducationSection() {
       {/* cooplem */}
       <div className="accordion-item">
         <h2 className="accordion-header">
-          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#cooplem-idiomas-section" aria-expanded="true">
+          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cooplem-idiomas-section" aria-expanded="false">
             Cooplem Idiomas
           </button>
         </h2>
-        <div id="cooplem-idiomas-section" className="accordion-collapse collapse show" >
+        <div id="cooplem-idiomas-section" className="accordion-collapse collapse" data-bs-parent="#education-session" >
           <div className="accordion-body">
             <ExperienceSectionContent
               imagePath="brands/cooplem.jpeg"
@@ -51,11 +50,11 @@ export default function EducationSection() {
       {/* fundacao */}
       <div className="accordion-item">
         <h2 className="accordion-header">
-          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fundacao-bradesco-section" aria-expanded="true">
+          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fundacao-bradesco-section" aria-expanded="false">
             Fundação Bradesco
           </button>
         </h2>
-        <div id="fundacao-bradesco-section" className="accordion-collapse collapse show" >
+        <div id="fundacao-bradesco-section" className="accordion-collapse collapse" data-bs-parent="#education-session">
           <div className="accordion-body">
             <ExperienceSectionContent
               imagePath="brands/fundacao-bradesco.jpeg"

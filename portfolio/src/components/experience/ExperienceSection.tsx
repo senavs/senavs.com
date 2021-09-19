@@ -3,7 +3,7 @@ import ExperienceSectionContent from "./ExperienceSectionContent";
 export default function ExperienceSection() {
 
   return (
-    <div className="accordion">
+    <div className="accordion" id="experience-section">
 
       {/* serasa */}
       <div className="accordion-item">
@@ -12,7 +12,7 @@ export default function ExperienceSection() {
             Serasa
           </button>
         </h2>
-        <div id="serasa-section" className="accordion-collapse collapse show" >
+        <div id="serasa-section" className="accordion-collapse collapse show" data-bs-parent="#experience-section">
           <div className="accordion-body">
             <ExperienceSectionContent
               imagePath="brands/serasa.jpeg"
@@ -48,11 +48,11 @@ export default function ExperienceSection() {
       {/* stefanini */}
       <div className="accordion-item">
         <h2 className="accordion-header">
-          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#stefanini-section" aria-expanded="true">
+          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stefanini-section" aria-expanded="false">
             Stefanini
           </button>
         </h2>
-        <div id="stefanini-section" className="accordion-collapse collapse show" >
+        <div id="stefanini-section" className="accordion-collapse collapse" data-bs-parent="#experience-section">
           <div className="accordion-body">
 
             <div className="mb-2">
@@ -151,11 +151,11 @@ export default function ExperienceSection() {
       {/* inep */}
       <div className="accordion-item">
         <h2 className="accordion-header">
-          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#inep-section" aria-expanded="true">
+          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#inep-section" aria-expanded="false">
             INEP
           </button>
         </h2>
-        <div id="inep-section" className="accordion-collapse collapse show" >
+        <div id="inep-section" className="accordion-collapse collapse" data-bs-parent="#experience-section">
           <div className="accordion-body">
 
             <ExperienceSectionContent
